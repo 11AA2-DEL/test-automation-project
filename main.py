@@ -17,7 +17,7 @@ if __name__ == '__main__':
 """
 from traceback import print_tb
 
-
+f"""
 #对append的使用
 list = [] #创建空列表用[]而不是（）
 List_1 = list.append("a") #当用变量接收时，返回的是None,而不是一个新数组,
@@ -251,6 +251,6 @@ with open(r"C:/Users/1/Desktop/process/test.txt","r",encoding = "utf-8") as f:
     contents = f.read()
     print(contents)
 result = contents.split()
-
+"""
 
 
