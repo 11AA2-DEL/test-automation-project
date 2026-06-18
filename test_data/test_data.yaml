@@ -1,0 +1,9 @@
+post:
+  - id: 1
+    expected_title: "sunt aut facere repellat provident occaecati excepturi optio reprehenderit"
+  - id: 2
+    expected_status: 200
+searches:
+  - keyword: "测试开发"
+  - keyword: "Pytest"
+  - keyword: "Python自动化"
