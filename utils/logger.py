@@ -5,7 +5,7 @@ os.makedirs(LOG_DIR, exist_ok=True)
 def get_logger(name):
     logger = logging.getLogger(name)
     logger.setLevel(LOG_LEVEL)
-    formatter = logging.Formatter('%(asctimes - %(name)s - %(levelname)s -%(message)s')
+    formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
     ch = logging.StreamHandler()
     ch.setLevel(LOG_LEVEL)
     ch.setFormatter(formatter)
