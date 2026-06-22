@@ -1,9 +1,30 @@
 post:
   - id: 1
-    expected_title: "sunt aut facere repellat provident occaecati excepturi optio reprehenderit"
+    expected_status: 200
   - id: 2
     expected_status: 200
+  - id: 3
+    expected_status: 200
+  - id: 999
+    expected_status: 404
+
 searches:
-  - keyword: "测试开发"
   - keyword: "Pytest"
+  - keyword: "测试开发"
   - keyword: "Python自动化"
+
+# 新增：创建文章的数据
+create_posts:
+  - title: "文章1"
+    body: "内容1"
+    expected_status: 201
+  - title: "文章2"
+    body: "内容2"
+    expected_status: 201
+
+# 新增：异常路径数据
+invalid_ids:
+  - path: "/posts/99999"
+    expected_status: 404
+  - path: "/posts/abc"
+    expected_status: 404
