@@ -9,7 +9,9 @@ class SearchPage:
         timeout=10000,
         wait_until="networkidle")
         return self
+
     def search(self,keyword:str):
         self.search_box.fill(keyword)
         self.page.press("#sb_form_q","Enter")
+        # 等待搜索结果模块出现，加载完成自动放行
         self.page.wait_for_timeout(2000)

@@ -12,6 +12,7 @@ searches:
   - keyword: "Pytest"
   - keyword: "测试开发"
   - keyword: "Python自动化"
+  - keyword: "CI/CD"
 
 # 新增：创建文章的数据
 create_posts:

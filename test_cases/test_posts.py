@@ -22,7 +22,7 @@ class TestPosts:
             assert resp.status_code == 404
 
     def test_get_by_user(self,api):
-        resp = api.get("/posts?userId = 1")
+        resp = api.get("/posts?userId=1")
         assert resp.status_code ==200
         for item in resp.json():
             assert item["userId"] == 1
@@ -35,6 +35,7 @@ class TestPosts:
         assert len(data) >0
         first_user = data [0]
         assert "name" in first_user
+
 class TestComments:
     def test_get_all(self,api):
         resp = api.get("/comments")
@@ -43,13 +44,35 @@ class TestComments:
     def test_get_comments(self,api):
         resp = api.get("/comments?postId=1")
         assert resp.status_code ==200
-        for ietm in resp.json():
-            assert ietm["postId"] == 1
+        for item in resp.json():
+            assert item["postId"] == 1
 
-    def test_conmment_has_email(self,api):
+    def test_conmments_has_email(self,api):
         resp = api.get("/comments/1")
         assert resp.status_code ==200
         data = resp.json()
         assert "email" in data
         assert "@" in data["email"]
+class TestUsers:
+    def test_get_all(self,api):
+        resp = api.get("/users")
+        assert resp.status_code ==200
+        assert len(resp.json()) > 0
 
+    def test_get_user(self,api):
+        resp = api.get("/users/1")
+        assert resp.status_code == 200
+        data  = resp.json()
+        assert "email" in data
+        assert "@" in data["email"]
+        assert "name" in data
+    def test_get_has_company(self,api):
+        resp = api.get("/users/1")
+        assert resp.status_code ==200
+        data = resp.json()
+        assert "company" in data
+        assert "name" in data["company"]
+
+    def test_create_users_empty_body(self,api):
+        resp = api.post("/comments",{})
+        assert resp.status_code == 201
