@@ -29,3 +29,9 @@ invalid_ids:
     expected_status: 404
   - path: "/posts/abc"
     expected_status: 404
+
+
+ui_searches:
+  - keyword: "Pytest 教程"
+  - keyword: "Selenium 自动化"
+  - keyword: "GitHub Actions"

@@ -15,7 +15,7 @@ def test_post_from_yaml(post):
     resp = requests.get(f"https://jsonplaceholder.typicode.com/posts/{post['id']}")
     assert resp.status_code == post.get("expected_status",200)
 @pytest.mark.parametrize("search",test_data["searches"])
-def test_baidu_serch_from_yaml(search):
+def test_baidu_search_from_yaml(search):
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
         page = browser.new_page()
