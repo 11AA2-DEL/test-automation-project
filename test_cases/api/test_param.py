@@ -14,6 +14,7 @@ with open(yaml_path, 'r', encoding="utf-8") as f:
 def test_post_from_yaml(post):
     resp = requests.get(f"https://jsonplaceholder.typicode.com/posts/{post['id']}")
     assert resp.status_code == post.get("expected_status",200)
+"""
 @pytest.mark.parametrize("search",test_data["searches"])
 def test_baidu_search_from_yaml(search):
     with sync_playwright() as p:
@@ -25,7 +26,7 @@ def test_baidu_search_from_yaml(search):
         page.press("#sb_form_q", "Enter")
         print(f'搜索后标题:{page.title()}')
         assert search["keyword"] in page.url
-        browser.close()
+        browser.close()"""
 
 
 

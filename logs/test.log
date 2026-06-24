@@ -576,3 +576,49 @@
 2026-06-24 17:24:14,179 - utils.api_client - INFO - Response:404
 2026-06-24 17:24:14,181 - utils.api_client - INFO - GET https://jsonplaceholder.typicode.com/posts/1/comments
 2026-06-24 17:24:14,398 - utils.api_client - INFO - Response:200
+2026-06-24 17:36:13,200 - utils.api_client - INFO - GET https://jsonplaceholder.typicode.com/posts
+2026-06-24 17:36:14,845 - utils.api_client - INFO - Response:200
+2026-06-24 17:36:14,848 - utils.api_client - INFO - GET https://jsonplaceholder.typicode.com/posts/1
+2026-06-24 17:36:15,051 - utils.api_client - INFO - Response:200
+2026-06-24 17:36:15,053 - utils.api_client - INFO - POST https://jsonplaceholder.typicode.com/posts
+2026-06-24 17:36:15,327 - utils.api_client - INFO - Response:201
+2026-06-24 17:36:15,329 - utils.api_client - INFO - GET https://jsonplaceholder.typicode.com/posts/99999
+2026-06-24 17:36:16,040 - utils.api_client - INFO - Response:404
+2026-06-24 17:36:16,042 - utils.api_client - INFO - GET https://jsonplaceholder.typicode.com/posts?userId=1
+2026-06-24 17:36:16,248 - utils.api_client - INFO - Response:200
+2026-06-24 17:36:16,250 - utils.api_client - INFO - GET https://jsonplaceholder.typicode.com/users
+2026-06-24 17:36:16,453 - utils.api_client - INFO - Response:200
+2026-06-24 17:36:16,455 - utils.api_client - INFO - GET https://jsonplaceholder.typicode.com/comments
+2026-06-24 17:36:16,941 - utils.api_client - INFO - Response:200
+2026-06-24 17:36:16,943 - utils.api_client - INFO - GET https://jsonplaceholder.typicode.com/comments?postId=1
+2026-06-24 17:36:17,158 - utils.api_client - INFO - Response:200
+2026-06-24 17:36:17,160 - utils.api_client - INFO - GET https://jsonplaceholder.typicode.com/comments/1
+2026-06-24 17:36:17,561 - utils.api_client - INFO - Response:200
+2026-06-24 17:36:17,563 - utils.api_client - INFO - GET https://jsonplaceholder.typicode.com/users
+2026-06-24 17:36:18,012 - utils.api_client - INFO - Response:200
+2026-06-24 17:36:18,015 - utils.api_client - INFO - GET https://jsonplaceholder.typicode.com/users/1
+2026-06-24 17:36:18,223 - utils.api_client - INFO - Response:200
+2026-06-24 17:36:18,225 - utils.api_client - INFO - GET https://jsonplaceholder.typicode.com/users/1
+2026-06-24 17:36:18,428 - utils.api_client - INFO - Response:200
+2026-06-24 17:36:18,429 - utils.api_client - INFO - POST https://jsonplaceholder.typicode.com/comments
+2026-06-24 17:36:18,697 - utils.api_client - INFO - Response:201
+2026-06-24 17:36:18,699 - utils.api_client - INFO - GET https://jsonplaceholder.typicode.com/invalid_endpoint
+2026-06-24 17:36:19,102 - utils.api_client - INFO - Response:404
+2026-06-24 17:36:19,103 - utils.api_client - INFO - GET https://jsonplaceholder.typicode.com/posts/1/comments
+2026-06-24 17:36:19,315 - utils.api_client - INFO - Response:200
+2026-06-24 17:36:19,318 - utils.api_client - INFO - GET https://jsonplaceholder.typicode.com/posts/1
+2026-06-24 17:36:19,525 - utils.api_client - INFO - Response:200
+2026-06-24 17:36:19,527 - utils.api_client - INFO - GET https://jsonplaceholder.typicode.com/posts/0
+2026-06-24 17:36:19,741 - utils.api_client - INFO - Response:404
+2026-06-24 17:36:19,743 - utils.api_client - INFO - GET https://jsonplaceholder.typicode.com/posts/1
+2026-06-24 17:36:19,946 - utils.api_client - INFO - Response:200
+2026-06-24 17:36:19,948 - utils.api_client - INFO - GET https://jsonplaceholder.typicode.com/posts/100
+2026-06-24 17:36:20,346 - utils.api_client - INFO - Response:200
+2026-06-24 17:36:20,348 - utils.api_client - INFO - GET https://jsonplaceholder.typicode.com/posts/101
+2026-06-24 17:36:20,556 - utils.api_client - INFO - Response:404
+2026-06-24 17:36:20,559 - utils.api_client - INFO - POST https://jsonplaceholder.typicode.com/posts
+2026-06-24 17:36:20,828 - utils.api_client - INFO - Response:201
+2026-06-24 17:36:20,829 - utils.api_client - INFO - POST https://jsonplaceholder.typicode.com/posts
+2026-06-24 17:36:21,102 - utils.api_client - INFO - Response:201
+2026-06-24 17:36:21,105 - utils.api_client - INFO - POST https://jsonplaceholder.typicode.com/posts
+2026-06-24 17:36:21,375 - utils.api_client - INFO - Response:201
