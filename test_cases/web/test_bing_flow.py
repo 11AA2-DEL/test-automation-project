@@ -36,7 +36,7 @@ def test_search_verification(page,search_info):
     count= result_page.get_result_count()
     print(f"'关键词'{search_info['keyword']}'搜索结果:{count}条")
     assert count >=search_info['min_results'],(
-        f"关键词'{search_info['keyword']}'预期至少{search_info['min_result']}条,实际{count}条"
+        f"关键词'{search_info['keyword']}'预期至少{search_info['min_results']}条,实际{count}条"
     )
 
 
