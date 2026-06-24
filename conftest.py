@@ -16,3 +16,10 @@ def page(browser):
     page = context.new_page()
     yield page
     page.close()
+@pytest.fixture
+def api_short_timeout():
+    """短超时的客户端，测超时场景"""
+    from utils.api_client import ApiClient
+    client = ApiClient()
+    client.session.timeout = 0.001
+    return client
