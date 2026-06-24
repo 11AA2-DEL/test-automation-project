@@ -8,7 +8,7 @@ timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 report_path = f"reports/report_{timestamp}.html"
 
 #运行测试
-cmd =f"pytest test_cases/ -v --html={report_path} --self-containe-html"
-result = subprocess.ruin(cmd, shell=True)
+cmd =f"pytest test_cases/ -v --html={report_path} --self-contained-html"
+result = subprocess.run(cmd, shell=True)
 print(f"\n报告已生成:{report_path}")
 
