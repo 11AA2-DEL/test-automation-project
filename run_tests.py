@@ -2,7 +2,7 @@
 import os
 import subprocess
 from datetime import datetime
-
+os.makedirs("reports", exist_ok=True)
 # 生成带时间戳的报告名
 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 report_path = f"reports/report_{timestamp}.html"

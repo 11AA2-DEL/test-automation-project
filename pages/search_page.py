@@ -1,3 +1,4 @@
+"""必应首页 Page Object：打开页面、输入搜索关键词"""
 from playwright.sync_api import Page
 class SearchPage:
     def __init__(self,page:Page):

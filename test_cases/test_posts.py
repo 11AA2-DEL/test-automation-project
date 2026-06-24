@@ -1,3 +1,4 @@
+"""文章接口测试用例：查询、创建、异常场景"""
 class TestPosts:
     def test_get_all(self,api):
         resp = api.get("/posts")

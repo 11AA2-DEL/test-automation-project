@@ -1,3 +1,4 @@
+"""封装HTTP请求客户端，统一管理GET/POST、Token、日志"""
 import requests
 from urllib.parse import urljoin
 from utils.logger import get_logger

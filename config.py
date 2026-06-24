@@ -1,3 +1,4 @@
+"""项目配置文件：日志级别、路径管理"""
 import os
 from datetime import datetime
 # 日志和报告路径（跟接口配置无关）
