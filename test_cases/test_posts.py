@@ -79,9 +79,9 @@ class TestUsers:
 
     def test_invalid_path(self,api):
         """访问不存在的路径"""
-        resp = api.post("/invalid_endpoint")
+        resp = api.get("/invalid_endpoint")
         assert resp.status_code == 404
     def test_wrong_method(self,api):
         """用GET访问POST才支持的路径"""
-        resp = api.get("/posts/1/commennts")
+        resp = api.get("/posts/1/comments")
         assert resp.status_code == 200
