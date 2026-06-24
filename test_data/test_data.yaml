@@ -35,3 +35,14 @@ ui_searches:
   - keyword: "Pytest 教程"
   - keyword: "Selenium 自动化"
   - keyword: "GitHub Actions"
+
+#多环境验证数据
+search_verification:
+  - keyword: "Python"
+    min_results: 5
+  - keyword: "测试开发"
+    min_results: 3
+  - keyword: "CI/CD"
+    min_results: 3
+
+#边界值测试

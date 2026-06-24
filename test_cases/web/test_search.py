@@ -2,7 +2,6 @@ import yaml
 import os
 import pytest
 from pages.search_page import SearchPage
-from pages.search_page import SearchPage
 from pages.search_result_page import SearchResultPage
 class TestBingSearch:
     def test_search_pytest(self,page):
