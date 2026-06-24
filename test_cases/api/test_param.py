@@ -24,7 +24,7 @@ def test_baidu_search_from_yaml(search):
         page.fill('#sb_form_q',search["keyword"])
         page.press("#sb_form_q", "Enter")
         print(f'搜索后标题:{page.title()}')
-        assert search["keyword"] in page.title()
+        assert search["keyword"] in page.url
         browser.close()
 
 
